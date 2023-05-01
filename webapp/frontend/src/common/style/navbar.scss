@@ -1,0 +1,19 @@
+.navbar-top {
+    background: white;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    button.hamburger {
+        width: 26px;
+        border: none;
+        background: none;
+        margin-left: 15px;
+        height: 21px;
+    }
+    svg#format-left {
+        width: inherit;
+        height: inherit;
+        color: white;
+        fill: black;
+    }
+}
