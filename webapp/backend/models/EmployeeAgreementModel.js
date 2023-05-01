@@ -1,6 +1,6 @@
 import { Sequelize } from "sequelize";
 import db from "../config/Database.js";
-import EmployeeProfile from "./EmployeeProfileModel.js";
+
 
 const { DataTypes } = Sequelize;
 
@@ -43,13 +43,6 @@ const EmployeeAgreement = db.define(
       validate: {
         notEmpty: true
       }
-    },
-    userId: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-      validate: {
-        notEmpty: true
-      }
     }
   },
   {
@@ -57,6 +50,5 @@ const EmployeeAgreement = db.define(
   }
 );
 
-EmployeeAgreement.belongsTo(EmployeeProfile, { foreignKey: 'userId' });
 
 export default EmployeeAgreement;

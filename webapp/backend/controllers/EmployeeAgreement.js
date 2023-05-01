@@ -61,15 +61,14 @@ export const getAgreementById = async(req, res) =>{
     }
 }
 export const createAgreement = async(req, res) =>{
-    const {startContract, endContract, position, typeContract, employeeprofileid,userId} = req.body;
+    const {startContract, endContract, position, typeContract} = req.body;
     try {
         await EmployeeAgreement.create({
             startContract: startContract,
             endContract: endContract,
             position: position,
-            typeContract: typeContract,
-            employeeprofileid: employeeprofileid,
-            userId: userId
+            typeContract: typeContract
+
             
         });
         res.status(201).json({msg: "Produkt został pomyślnie utworzony"});

@@ -9,13 +9,6 @@ export const getEmployeeProfile = async(req, res) =>{
     try {
         const response = await User.findAll({
             attributes: ['uuid'],
-            include: [{
-                model: EmployeeProfile,
-                include: [{
-                    model: EmployeeAgreement,
-                    attributes: ['id', 'startContract', 'endContract', 'position', 'typeContract']
-                }]
-            }]
         });
         
         res.status(200).json(response);

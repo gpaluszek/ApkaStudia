@@ -1,6 +1,5 @@
 import { Sequelize } from "sequelize";
 import db from "../config/Database.js";
-import EmployeeProfile from "./EmployeeProfileModel.js"; // import modelu EmployeeProfile
 
 
 
@@ -108,7 +107,6 @@ const User = db.define('user',{
     freezeTableName: true
 });
 
-// Relacja z modelem EmployeeProfile
-User.hasOne(EmployeeProfile, { foreignKey: 'userId' });
+
 
 export default User;

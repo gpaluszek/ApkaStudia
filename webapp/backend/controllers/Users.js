@@ -9,13 +9,7 @@ export const getUsers = async(req, res) =>{
     try {
         const response = await User.findAll({
             attributes:['uuid','name', 'surname', 'street', 'houseNumber', 'city', 'postCode', 'sex', 'phoneNumber', 'email', 'role', 'status'],
-            include: [
-                {
-                  model: EmployeeProfile,
-                  include: [EmployeeAgreement],
-                },
-              ],
-
+           
               raw: true
             });
         res.status(200).json(response);

@@ -1,3 +1,22 @@
+###
+// Login
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "grzegorzpaluch.krk@gmail.com",
+    "password": "123123"
+}
+###
+// Me 
+GET http://localhost:5000/me
+
+
+
+// Logout
+###
+DELETE http://localhost:5000/logout
+###
 // Create a user
 POST http://localhost:5000/users
 Content-Type: application/json
@@ -38,14 +57,14 @@ Content-Type: application/json
     "confPassword": "123123"
 }
 ###
-// Create a communique
-POST http://localhost:5000/communique
-Content-Type: application/json
+# // Create a communique
+# POST http://localhost:5000/communique
+# Content-Type: application/json
 
-{
-    "title": "Orlen flota 3 ",
-    "text": "raz dwa trzy 3 "
-}
+# {
+#     "title": "Orlen flota 3 ",
+#     "text": "raz dwa trzy 3 "
+# }
 
 
 
@@ -92,15 +111,7 @@ Content-Type: application/json
 // DELETE A USER 
 DELETE  http://localhost:5000/users/c593b2a3-2523-469d-b6db-04f682a1cdfb
 
-###
-// Login
-POST http://localhost:5000/login
-Content-Type: application/json
 
-{
-    "email": "grzegorzpaluch.krk@gmail.com",
-    "password": "123123"
-}
 ###
 // Login
 POST http://localhost:5000/login
@@ -121,34 +132,34 @@ GET http://localhost:5000/me
 DELETE http://localhost:5000/logout
 
 
-// Get All Products
-###
-Get http://localhost:5000/products
+# // Get All Products
+# ###
+# Get http://localhost:5000/products
 
-// Get One Product
-###
-Get http://localhost:5000/products/bc952083-63a5-4e58-956e-25ab4e3bed53
+# // Get One Product
+# ###
+# Get http://localhost:5000/products/bc952083-63a5-4e58-956e-25ab4e3bed53
 
-// POST data product
-###
-POST http://localhost:5000/products
-Content-Type: application/json
+# // POST data product
+# ###
+# POST http://localhost:5000/products
+# Content-Type: application/json
 
-{
-    "name": "Trasa 4",
-    "price": 1231223
-}
+# {
+#     "name": "Trasa 4",
+#     "price": 1231223
+# }
 
-// UPDATE data product
-###
-PATCH http://localhost:5000/products/bc952083-63a5-4e58-956e-25ab4e3bed53
-Content-Type: application/json
+# // UPDATE data product
+# ###
+# PATCH http://localhost:5000/products/bc952083-63a5-4e58-956e-25ab4e3bed53
+# Content-Type: application/json
 
-{
-    "name": "Trasa UPDATE4",
-    "price": 1231223
-}
+# {
+#     "name": "Trasa UPDATE4",
+#     "price": 1231223
+# }
 
-// DELETE data product
-###
-DELETE  http://localhost:5000/products/bc952083-63a5-4e58-956e-25ab4e3bed53
+# // DELETE data product
+# ###
+# DELETE  http://localhost:5000/products/bc952083-63a5-4e58-956e-25ab4e3bed53
