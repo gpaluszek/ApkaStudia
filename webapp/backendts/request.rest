@@ -1,0 +1,64 @@
+GET http://localhost:5000/users
+
+###
+GET http://localhost:5000/users/1
+
+###
+
+// Create a user
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Grzegorz",
+    "surname": "Paluch",
+    "street": "Kasztanowa",
+    "houseNumber": "6",
+    "city": "Kraków",
+    "postCode": "32-087",
+    "sex": "Mężczyzna",
+    "phoneNumber": "794999310",
+    "email": "grzegorzpalu2c2h.krk@gmail.com",
+    "role": "admin",
+    "status": "true",
+    "password": "123123",
+    "confPassword": "123123"
+}
+
+###
+// Login
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "grzegorzpaluch.krk@gmail.com",
+    "password": "123123"
+}
+###
+GET http://localhost:5000/me
+
+###
+
+// Logout
+###
+DELETE http://localhost:5000/logout
+###
+
+PATCH http://localhost:5000/users/3
+Content-Type: application/json
+
+{
+    "name": "Grzegorz",
+    "surname": "Paluch",
+    "street": "Kasztanowa",
+    "houseNumber": "6",
+    "city": "Kraków",
+    "postCode": "32-087",
+    "sex": "Mężczyzna",
+    "phoneNumber": "794999310",
+    "email": "grzegorzpalu2c2hSSSS.krk@gmail.com",
+    "role": "admin",
+    "status": true,
+    "password": "123123",
+    "confPassword": "123123"
+}
