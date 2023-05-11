@@ -1,9 +1,10 @@
-import User from "../models/UserModel.js";
+import { PrismaClient } from '@prisma/client';
+const prisma = new PrismaClient();
 import argon2 from "argon2";
 
 
 export const Login = async (req, res) =>{
-    const user = await User.findOne({
+    const user = await prisma.user.findUnique({
         where: {
             email: req.body.email
         }
@@ -11,23 +12,36 @@ export const Login = async (req, res) =>{
     if(!user) return res.status(404).json({msg: "Użytkownik nie został znaleziony"});
     const match = await argon2.verify(user.password, req.body.password);
     if(!match) return res.status(400).json({msg: "Błędne hasło"});
-    req.session.userId = user.uuid;
-    const uuid = user.uuid;
+    req.session.userId = user.id;
+    const uid = user.id;
     const name = user.name;
     const email = user.email;
     const role = user.role;
 
 
-    res.status(200).json({uuid, name, email, role});
+    res.status(200).json({uid, name, email, role});
 }
 export const Me = async (req, res) => {
     if(!req.session.userId){
         return res.status(401).json({msg: "Proszę zalogować się na swoje konto!"});
     }
-    const user = await User.findOne({
-        attributes: ['name', 'surname', 'street', 'houseNumber', 'city', 'postCode', 'sex', 'phoneNumber', 'email', 'role', 'status', 'password'],
+    const user = await prisma.user.findUnique({
+        select: {
+            name: true,
+            surname: true,
+            street: true,
+            houseNumber: true,
+            city: true,
+            postCode: true,
+            sex: true,
+            phoneNumber: true,
+            email: true,
+            role: true,
+            status: true,
+            password: true
+        },
         where: {
-            uuid: req.session.userId
+            id: req.session.userId
         }
     });
     if(!user) return res.status(404).json({msg: "Użytkownik nie został znaleziony"});
