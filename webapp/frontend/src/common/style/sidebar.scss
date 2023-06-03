@@ -1,16 +1,35 @@
 @import "colors";
 // css Main SideBar
-// .active-side {
-//     border-left: 2px solid #2196f3;
-// }
+.active-side {
+    background: $background-menu-active-a;
+    border-radius: 4px;
+    .nav-a {
+        .nav-text {
+        color: white;
+
+        }
+        .nav-icon {
+            transform: 1s;
+            .uim-tertiary {
+                fill: $icon-mono-first-hover !important;
+            }
+            .uim-primary {
+                fill: $icon-mono-second-hover !important;
+            }
+        }
+    }
+}
+
+
 .aside {
     width: 100%;
-    max-width: 222px;
+    max-width: 255px;
     background: $menu-background-color;
     height: 100vh;
-    // border-right: 2px solid $menu-border-color;
+    border-right: 1px solid $menu-border-color;
     display: flex;
     flex-direction: column;
+    padding: 1.5rem 0.4%;
     .nav-logo {
         height: 50px;
         display: flex;
@@ -32,6 +51,13 @@
             }
         }
     }
+    .menu-title {
+        color: #999999;
+        font-size: 18px;
+        font-weight: 500;
+        margin: 20px 0 ;
+        padding-left: 10px;
+    }
     .nav-content {
         display: flex;
         flex-direction: column;
@@ -39,6 +65,8 @@
         .nav-ul {
             width: 100%;
             max-width: 203px;
+            list-style: none;
+
             li {
 
                 .nav-a {
@@ -66,12 +94,24 @@
                         width: 35px;
                         fill: $menu-color-icon;
                     }
+                    .uim-tertiary {
+                        fill: $icon-mono-first;
+                    }
+                    .uim-primary {
+                        fill: $icon-mono-second;
+                    }
                 }
                 .nav-a:hover {
-                    background: $menu-grey-hover;
+                    background: $menu-hover;
                     border-radius: 4px;
                     color: black;
                     transition: .5s;
+                    // .uim-tertiary {
+                    //     fill: $icon-mono-first-hover;
+                    // }
+                    // .uim-primary {
+                    //     fill: $icon-mono-second-hover;
+                    // }
                 }
                 .nav-a:hover .nav-icon {
                     fill: black;
@@ -83,13 +123,30 @@
                     transition: .5s;
                     
                 }
+               
                 .sidebar-submenu-ul {
                     .sidebar-submenu-li {
                         display: flex;
                         .nav-a-dropdown {
                             text-decoration: none;
                             color: $menu-font-color;
-                            padding: 0.25rem 1.5rem 0.25rem 2.4rem;
+                            padding: 0.5rem 0.5rem 0.5rem 2rem;
+                            position: relative;
+                            display: flex;
+                            align-items: center;
+                            width: 100%;
+                            margin-left: 20px;
+                        }
+                        .nav-a-dropdown::before {
+                            box-sizing: border-box;
+                            position: absolute;
+                            border-radius: 9999px;
+                            border-width: 1px;
+                            content: ">>";
+                            left: 4px;
+                            display: flex;
+                            color: #5C9AFF;
+                            font-weight: 700;
                         }
                         .nav-a-dropdown:hover {
                             transition: color .25s cubic-bezier(.645,.045,.355,1);
@@ -99,20 +156,27 @@
                 }
             }
         }
-        .nav-button {
-            width: 100%;
-            max-width: 203px;
-            display: flex;
-            align-items: center;
-            background: none;
-            border: none;
-            margin-top: 40px;
-            color: $menu-font-color;
-            .nav-icon {
-                padding: 0 8px 0;
-                width: 35px;
-                fill: $menu-color-icon;
-            }
+       
+    }
+    .nav-button {
+        width: 100%;
+        max-width: 203px;
+        display: flex;
+        align-items: center;
+        background: none;
+        border: none;
+        color: $menu-font-color;
+        .nav-icon {
+            padding: 0 8px 0;
+            width: 35px;
+            fill: $menu-color-icon;
+            
+        }
+        .uim-tertiary {
+            fill: $icon-mono-first;
+        }
+        .uim-primary {
+            fill: $icon-mono-second;
         }
     }
 }

@@ -62,3 +62,33 @@ Content-Type: application/json
     "password": "123123",
     "confPassword": "123123"
 }
+###
+
+// DELETE A USER 
+DELETE  http://localhost:5000/users/7
+###
+###
+
+// DELETE A Copntrasct 
+DELETE  http://localhost:5000/contract/delete/1
+###
+// Create a user
+POST http://localhost:5000/contract
+Content-Type: application/json
+
+{
+    "startContract": "16.05.2023",
+    "endContract": "18.05.2023",
+    "position": "Kierowca",
+    "typeContract": "Zlecenie",
+    "profileId": 1,
+
+}
+###
+PATCH http://localhost:5000/users/status/7
+Content-Type: application/json
+
+{
+    "status": "true"
+}
+###

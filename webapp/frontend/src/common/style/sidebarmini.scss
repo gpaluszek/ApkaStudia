@@ -57,4 +57,13 @@
 
 
     }
+    .menu-title {
+        display: none;
+    }
+    .nav-button {
+        justify-content: center;
+        .nav-text {
+            display: none;
+        }
+    }
 }

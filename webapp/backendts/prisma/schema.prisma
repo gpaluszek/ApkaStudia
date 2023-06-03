@@ -1,6 +1,3 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
 generator client {
   provider = "prisma-client-js"
 }
@@ -11,33 +8,93 @@ datasource db {
 }
 
 model User {
-  id          Int      @id @default(autoincrement())
-  name        String
-  surname     String
-  street      String
-  houseNumber String
-  city        String
-  postCode    String
-  sex         String
-  phoneNumber String
-  email       String  @unique
-  password    String
-  role        String
-  status      Boolean @default(false)
-  createdAt   DateTime @default(now())
-  profile Profile?
+  id                 Int         @id @default(autoincrement())
+  name               String
+  surname            String
+  street             String
+  houseNumber        String
+  city               String
+  postCode           String
+  sex                String
+  phoneNumber        String
+  email              String      @unique
+  password           String
+  role               String
+  status             Boolean     @default(false)
+  createdAt          DateTime    @default(now())
+  profile            Profile?
+  sentComuniques     Comunique[] @relation("SentComuniques")
+  receivedComuniques Comunique[] @relation("ReceivedComuniques")
+  trails             UserOnTrail[]
 }
+
 
 model Profile {
-  id Int @id @default(autoincrement())
-  user User @relation(fields: [userId], references: [id])
-  userId Int @unique
+  id        Int        @id @default(autoincrement())
+  user      User       @relation(fields: [userId], references: [id])
+  userId    Int        @unique
+  contracts Contract[]
 }
 
-model Agreement {
-  id Int @id @default(autoincrement())
+model Contract {
+  id            Int      @id @default(autoincrement())
   startContract DateTime
-  endContract DateTime
-  position String
-  typeContract String
+  endContract   DateTime
+  position      String
+  typeContract  String
+  profileId     Int
+  profile       Profile  @relation(fields: [profileId], references: [id])
+}
+ 
+model Comunique {
+  id         Int      @id @default(autoincrement())
+  message    String
+  timestamp  DateTime
+  senderId   Int
+  receiverId Int
+
+  sender   User @relation("SentComuniques", fields: [senderId], references: [id])
+  receiver User @relation("ReceivedComuniques", fields: [receiverId], references: [id])
+}
+
+model UserOnTrail {
+  id        Int       @id @default(autoincrement())
+  usertrailId Int
+  trail Trail @relation(fields: [usertrailId], references: [id])
+  userId Int
+  user User @relation(fields: [userId],references: [id])
+  
+}
+
+model Trail {
+  id          Int        @id @default(autoincrement())
+  name        String
+  description String
+  images      Image[]
+  locations   Location[]
+  categoryId  Int?
+  category    Category?  @relation("TrailCategory", fields: [categoryId], references: [id])
+  userOnTrails UserOnTrail[]
+}
+
+model Image {
+  id      Int    @id @default(autoincrement())
+  url     String
+  trail   Trail  @relation(fields: [trailId], references: [id])
+  trailId Int
+}
+
+model Location {
+  id        Int   @id @default(autoincrement())
+  latitude  Float
+  longitude Float
+  trail     Trail @relation(fields: [trailId], references: [id])
+  trailId   Int
+}
+
+model Category {
+  id          Int     @id @default(autoincrement())
+  name        String
+  description String
+  trails      Trail[] @relation("TrailCategory")
 }

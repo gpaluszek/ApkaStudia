@@ -11,8 +11,8 @@ export  const EmailIcon = ({ className, style  }) =>  {
   </g>
 </svg>
 
-  )
-}
+  );
+};
 export  const PasswordIcon = ({ className , style }) =>  {
   return (
     <svg className={className} style={style} xmlns="http://www.w3.org/2000/svg" width="8.841" height="10.527" viewBox="0 0 8.841 10.527">
@@ -24,8 +24,8 @@ export  const PasswordIcon = ({ className , style }) =>  {
 </svg>
 
 
-  )
-}
+  );
+};
 export  const HomeIcon = ({ className, style  }) =>  {
   return (
     <svg className={className} style={style} id="Iconly_Broken_Home" data-name="Iconly/Broken/Home" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -37,8 +37,8 @@ export  const HomeIcon = ({ className, style  }) =>  {
 
 
 
-  )
-}
+  );
+};
 export  const TickSquareIcon = ({ className, style  }) =>  {
   return (
     <svg className={className} style={style} id="Tick_Square" data-name="Tick Square" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
@@ -48,8 +48,8 @@ export  const TickSquareIcon = ({ className, style  }) =>  {
 
 
 
-  )
-}
+  );
+};
 export  const CalendarIcon = ({ className, style  }) =>  {
   return (
     <svg className={className} style={style} id="Iconly_Broken_Calendar" data-name="Iconly/Broken/Calendar" xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 13 14">
@@ -57,8 +57,8 @@ export  const CalendarIcon = ({ className, style  }) =>  {
     <path id="Calendar-2" data-name="Calendar" d="M4.063,14C1.369,14,0,12.817,0,10.49V4.7A3.15,3.15,0,0,1,1.5,1.728a.508.508,0,0,1,.528-.019.492.492,0,0,1-.051.886A2.176,2.176,0,0,0,.993,4.7v.185h9.162a.489.489,0,1,1,0,.978H.993V10.49c0,1.777.892,2.514,3.071,2.526H8.937c2.148,0,3.065-.755,3.065-2.533V4.694A2.2,2.2,0,0,0,9.716,2.217v.471a.5.5,0,0,1-1-.037V.471A.483.483,0,0,1,8.878.129.5.5,0,0,1,9.238,0a.5.5,0,0,1,.477.514v.725C11.889,1.443,13,2.608,13,4.7V10.49C13,12.817,11.631,14,8.937,14ZM8.9,10.558a.623.623,0,0,1,.628-.619H9.521a.634.634,0,0,1,.448.179.616.616,0,0,1,.186.44.628.628,0,0,1-1.256,0Zm-3.015,0a.628.628,0,1,1,.628.619A.624.624,0,0,1,5.884,10.558Zm-3.008,0A.624.624,0,0,1,3.5,9.938H3.5a.632.632,0,0,1,.448.179.613.613,0,0,1,.186.44.628.628,0,0,1-1.256,0ZM8.9,8.05a.623.623,0,0,1,.628-.619H9.521a.631.631,0,0,1,.448.179.616.616,0,0,1,.186.44.628.628,0,0,1-1.256,0Zm-3.015,0a.628.628,0,1,1,.628.619A.624.624,0,0,1,5.884,8.05Zm-3.008,0A.624.624,0,0,1,3.5,7.431H3.5a.629.629,0,0,1,.448.179.613.613,0,0,1,.186.44.628.628,0,0,1-1.256,0Zm.892-4.9a.493.493,0,0,1-.484-.5V.515a.5.5,0,0,1,1,0V1.19H7.122a.489.489,0,1,1,0,.978H4.271v.489a.487.487,0,0,1-.148.348.5.5,0,0,1-.35.141Z" fill="#717078"/>
   </g>
 </svg>
-  )
-}
+  );
+};
 export  const DocumentIcon = ({ className , style }) =>  {
   return (
     <svg className={className} style={style} xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 12 14">
@@ -67,8 +67,8 @@ export  const DocumentIcon = ({ className , style }) =>  {
     </g>
   </svg>
   
-  )
-}
+  );
+};
 export  const UsersIcon = ({ className , style }) =>  {
   return (
     <svg className={className} style={style} xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="0 0 18 14">
@@ -77,8 +77,8 @@ export  const UsersIcon = ({ className , style }) =>  {
     </g>
   </svg>
   
-  )
-}
+  );
+};
 export const UserIcon = ({ className, style }) => {
   return (
     <svg   className={className} style={style} id="Iconly_Broken_Profile" data-name="Iconly/Broken/Profile" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -88,17 +88,17 @@ export const UserIcon = ({ className, style }) => {
   </svg>
   
 
-  )
+  );
 
-}
+};
 export  const AddUserIcon = ({ className , style }) =>  {
   return (
-    <svg className={className} style={style} id="Add_User" data-name="Add User" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
-    <path id="Add_User-2" data-name="Add User" d="M4.837,13.991a.5.5,0,0,1-.486-.518.514.514,0,0,1,.515-.488q.334.01.68.01c3.015,0,4.543-.526,4.543-1.564S8.56,9.853,5.545,9.853,1,10.38,1,11.417c0,.34.12.832,1.161,1.186a.5.5,0,0,1-.321.953C.319,13.037,0,12.107,0,11.417c0-2.3,3.165-2.569,5.545-2.569,1.371,0,5.545,0,5.545,2.583,0,2.3-3.165,2.569-5.545,2.569C5.305,14,5.068,14,4.837,13.991Zm6.69-6.436V6.677h-.9a.525.525,0,0,1,0-1.05h.9V4.749a.523.523,0,1,1,1.046,0v.878h.9a.525.525,0,0,1,0,1.05h-.9v.879a.523.523,0,1,1-1.046,0ZM1.811,3.748A3.734,3.734,0,1,1,5.545,7.5,3.745,3.745,0,0,1,1.811,3.748Zm1,0A2.732,2.732,0,1,0,5.545,1.006,2.74,2.74,0,0,0,2.813,3.748Z" fill="#717078"/>
+    <svg fill="#717078" className={className} style={style}  id="Add_User" data-name="Add User" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+    <path  id="Add_User-2" data-name="Add User" d="M4.837,13.991a.5.5,0,0,1-.486-.518.514.514,0,0,1,.515-.488q.334.01.68.01c3.015,0,4.543-.526,4.543-1.564S8.56,9.853,5.545,9.853,1,10.38,1,11.417c0,.34.12.832,1.161,1.186a.5.5,0,0,1-.321.953C.319,13.037,0,12.107,0,11.417c0-2.3,3.165-2.569,5.545-2.569,1.371,0,5.545,0,5.545,2.583,0,2.3-3.165,2.569-5.545,2.569C5.305,14,5.068,14,4.837,13.991Zm6.69-6.436V6.677h-.9a.525.525,0,0,1,0-1.05h.9V4.749a.523.523,0,1,1,1.046,0v.878h.9a.525.525,0,0,1,0,1.05h-.9v.879a.523.523,0,1,1-1.046,0ZM1.811,3.748A3.734,3.734,0,1,1,5.545,7.5,3.745,3.745,0,0,1,1.811,3.748Zm1,0A2.732,2.732,0,1,0,5.545,1.006,2.74,2.74,0,0,0,2.813,3.748Z" />
   </svg>
   
-  )
-}
+  );
+};
 export  const LocationIcon = ({ className , style }) =>  {
   return (
     <svg className={className} style={style} id="Location" xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 12 14">
@@ -107,16 +107,16 @@ export  const LocationIcon = ({ className , style }) =>  {
 
   
   
-  )
-}
+  );
+};
 export  const ScanIcon = ({ className , style }) =>  {
   return (
     <svg className={className} style={style} xmlns="http://www.w3.org/2000/svg" width="17" height="14" viewBox="0 0 17 14">
     <path id="Scan" d="M11.283,14a.581.581,0,1,1,0-1.161h1.231a1.892,1.892,0,0,0,1.9-1.877V8.194H2.586v2.77a1.889,1.889,0,0,0,1.9,1.875H5.74a.581.581,0,1,1,0,1.161H4.481a3.059,3.059,0,0,1-3.072-3.036V8.194H.588a.581.581,0,1,1,0-1.161H16.412a.581.581,0,1,1,0,1.161h-.821v2.768A3.062,3.062,0,0,1,12.514,14ZM7.065,11.1a.581.581,0,1,1,0-1.161H9.937a.581.581,0,1,1,0,1.161Zm0-6.033a.581.581,0,1,1,0-1.162H9.937a.581.581,0,1,1,0,1.162ZM1.409,4.481V3.035A3.058,3.058,0,0,1,4.48,0H5.74a.585.585,0,0,1,.588.581.584.584,0,0,1-.588.58H4.482a1.888,1.888,0,0,0-1.9,1.873V4.481a.589.589,0,0,1-1.177,0Zm13.007,0V3.038a1.892,1.892,0,0,0-1.9-1.877H11.283a.584.584,0,0,1-.588-.58A.583.583,0,0,1,11.283,0h1.231a3.061,3.061,0,0,1,3.078,3.037V4.482a.588.588,0,0,1-1.176,0Z" fill="#717078"/>
   </svg>
   
-  )
-}
+  );
+};
 export  const RaportIcon = ({ className , style }) =>  {
   return (
     <svg className={className} style={style} id="Document" xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 13 14">
@@ -124,8 +124,8 @@ export  const RaportIcon = ({ className , style }) =>  {
 </svg>
 
   
-  )
-}
+  );
+};
 export  const ActivityIcon = ({ className , style }) =>  {
   return (
     <svg className={className} style={style} xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
@@ -134,8 +134,8 @@ export  const ActivityIcon = ({ className , style }) =>  {
 
 
   
-  )
-}
+  );
+};
 export  const LogoutIcon = ({ className , style }) =>  {
   return (
     <svg className={className} style={style} id="Iconly_Broken_Logout" data-name="Iconly/Broken/Logout" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -148,21 +148,21 @@ export  const LogoutIcon = ({ className , style }) =>  {
 
 
   
-  )
-}
+  );
+};
 export  const SettingsIcon = ({ className , style }) =>  {
   return (
     <svg className={className} style={style} id="Iconly_Broken_Setting" data-name="Iconly/Broken/Setting" xmlns="http://www.w3.org/2000/svg" width="23" height="25" viewBox="0 0 23 25">
 <g id="Setting" transform="translate(0 0.466)">
-  <path id="Setting-2" data-name="Setting" d="M7.475,21.706a1.269,1.269,0,0,0-.173-.658,1.322,1.322,0,0,0-1.807-.494,3.253,3.253,0,0,1-4.356-1.186L.4,18.061a3.31,3.31,0,0,1,1.177-4.392,1.35,1.35,0,0,0,.478-.483,1.334,1.334,0,0,0-.424-1.933A3.308,3.308,0,0,1,.452,6.863.943.943,0,0,1,1.771,6.6a.95.95,0,0,1,.271,1.275,1.335,1.335,0,0,0,.49,1.811,3.215,3.215,0,0,1,1.133,1.2,3.309,3.309,0,0,1-1.177,4.391A1.337,1.337,0,0,0,2,17.084l.752,1.306a1.3,1.3,0,0,0,.8.63,1.284,1.284,0,0,0,1.006-.147,3.126,3.126,0,0,1,1.6-.428A3.28,3.28,0,0,1,9.424,21.74a1.335,1.335,0,0,0,1.329,1.329l-.011.021a.947.947,0,0,1,.82.478.964.964,0,0,1,0,.955.949.949,0,0,1-.82.477A3.281,3.281,0,0,1,7.475,21.706Zm6.087.1a3.3,3.3,0,0,1,1.63-2.783,3.247,3.247,0,0,1,3.205-.038,1.287,1.287,0,0,0,1,.143A1.367,1.367,0,0,0,20.2,18.5l.74-1.307a1.322,1.322,0,0,0-.479-1.811,3.175,3.175,0,0,1-1.186-1.306,3.309,3.309,0,0,1,1.176-4.392.963.963,0,0,1,.959,1.668,1.356,1.356,0,0,0-.479.484,1.336,1.336,0,0,0,.479,1.823,3.309,3.309,0,0,1,1.132,4.5l-.74,1.306a3.252,3.252,0,0,1-4.356,1.186,1.3,1.3,0,0,0-1.328-.012,1.321,1.321,0,0,0-.654,1.166.957.957,0,0,1-1.905,0ZM8.6,15.428a4.142,4.142,0,0,1-.892-4.5,4.083,4.083,0,0,1,3.784-2.552h.013a4.039,4.039,0,0,1,2.881,1.2,4.152,4.152,0,0,1-1.319,6.738A4.063,4.063,0,0,1,8.6,15.428Zm.714-2.923a2.178,2.178,0,1,0,2.178-2.2A2.189,2.189,0,0,0,9.315,12.506ZM20.2,6.6A1.322,1.322,0,0,0,18.4,6.116a3.241,3.241,0,0,1-3.2-.036,3.3,3.3,0,0,1-1.634-2.774,1.336,1.336,0,0,0-.37-.969,1.306,1.306,0,0,0-.947-.4H10.753a1.32,1.32,0,0,0-.951.4,1.343,1.343,0,0,0-.378.969A3.243,3.243,0,0,1,7.8,6.093,3.189,3.189,0,0,1,4.59,6.072l-.044-.044A.962.962,0,0,1,4.242,4.71.945.945,0,0,1,5.549,4.4a1.359,1.359,0,0,0,.653.186,1.317,1.317,0,0,0,.955-.352,1.348,1.348,0,0,0,.427-.932A3.282,3.282,0,0,1,10.753,0h1.491a3.28,3.28,0,0,1,3.266,3.294,1.267,1.267,0,0,0,.174.658,1.312,1.312,0,0,0,1.807.5,3.252,3.252,0,0,1,4.356,1.186A.982.982,0,0,1,21.5,6.939.952.952,0,0,1,20.2,6.6Z" transform="translate(0 -0.466)" fill="#bbbbc9"/>
+  <path id="Setting-2" data-name="Setting" d="M7.475,21.706a1.269,1.269,0,0,0-.173-.658,1.322,1.322,0,0,0-1.807-.494,3.253,3.253,0,0,1-4.356-1.186L.4,18.061a3.31,3.31,0,0,1,1.177-4.392,1.35,1.35,0,0,0,.478-.483,1.334,1.334,0,0,0-.424-1.933A3.308,3.308,0,0,1,.452,6.863.943.943,0,0,1,1.771,6.6a.95.95,0,0,1,.271,1.275,1.335,1.335,0,0,0,.49,1.811,3.215,3.215,0,0,1,1.133,1.2,3.309,3.309,0,0,1-1.177,4.391A1.337,1.337,0,0,0,2,17.084l.752,1.306a1.3,1.3,0,0,0,.8.63,1.284,1.284,0,0,0,1.006-.147,3.126,3.126,0,0,1,1.6-.428A3.28,3.28,0,0,1,9.424,21.74a1.335,1.335,0,0,0,1.329,1.329l-.011.021a.947.947,0,0,1,.82.478.964.964,0,0,1,0,.955.949.949,0,0,1-.82.477A3.281,3.281,0,0,1,7.475,21.706Zm6.087.1a3.3,3.3,0,0,1,1.63-2.783,3.247,3.247,0,0,1,3.205-.038,1.287,1.287,0,0,0,1,.143A1.367,1.367,0,0,0,20.2,18.5l.74-1.307a1.322,1.322,0,0,0-.479-1.811,3.175,3.175,0,0,1-1.186-1.306,3.309,3.309,0,0,1,1.176-4.392.963.963,0,0,1,.959,1.668,1.356,1.356,0,0,0-.479.484,1.336,1.336,0,0,0,.479,1.823,3.309,3.309,0,0,1,1.132,4.5l-.74,1.306a3.252,3.252,0,0,1-4.356,1.186,1.3,1.3,0,0,0-1.328-.012,1.321,1.321,0,0,0-.654,1.166.957.957,0,0,1-1.905,0ZM8.6,15.428a4.142,4.142,0,0,1-.892-4.5,4.083,4.083,0,0,1,3.784-2.552h.013a4.039,4.039,0,0,1,2.881,1.2,4.152,4.152,0,0,1-1.319,6.738A4.063,4.063,0,0,1,8.6,15.428Zm.714-2.923a2.178,2.178,0,1,0,2.178-2.2A2.189,2.189,0,0,0,9.315,12.506ZM20.2,6.6A1.322,1.322,0,0,0,18.4,6.116a3.241,3.241,0,0,1-3.2-.036,3.3,3.3,0,0,1-1.634-2.774,1.336,1.336,0,0,0-.37-.969,1.306,1.306,0,0,0-.947-.4H10.753a1.32,1.32,0,0,0-.951.4,1.343,1.343,0,0,0-.378.969A3.243,3.243,0,0,1,7.8,6.093,3.189,3.189,0,0,1,4.59,6.072l-.044-.044A.962.962,0,0,1,4.242,4.71.945.945,0,0,1,5.549,4.4a1.359,1.359,0,0,0,.653.186,1.317,1.317,0,0,0,.955-.352,1.348,1.348,0,0,0,.427-.932A3.282,3.282,0,0,1,10.753,0h1.491a3.28,3.28,0,0,1,3.266,3.294,1.267,1.267,0,0,0,.174.658,1.312,1.312,0,0,0,1.807.5,3.252,3.252,0,0,1,4.356,1.186A.982.982,0,0,1,21.5,6.939.952.952,0,0,1,20.2,6.6Z" transform="translate(0 -0.466)" />
 </g>
 </svg>
 
 
 
   
-  )
-}
+  );
+};
 export  const ChatIcon = ({ className , style }) =>  {
   return (
 <svg className={className} style={style} id="Chat" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
@@ -173,8 +173,8 @@ export  const ChatIcon = ({ className , style }) =>  {
 
 
   
-  )
-}
+  );
+};
 
 export const AvatarWoman = ({className, style}) => {
   return (
@@ -206,8 +206,8 @@ export const AvatarWoman = ({className, style}) => {
 </svg>
 
 
-  )
-}
+  );
+};
 
 export const AvatarMan = ({className, style}) => {
   return (
@@ -237,8 +237,8 @@ export const AvatarMan = ({className, style}) => {
   </g>
 </svg>
 
-  )
-}
+  );
+};
 
 export const SettingTwoIcon = ({className, style}) => {
   return (
@@ -251,8 +251,8 @@ export const SettingTwoIcon = ({className, style}) => {
   </g>
 </svg>
 
-  )
-}
+  );
+};
 
 export const LogoIcon = ({className, style}) => {
   return (
@@ -261,8 +261,8 @@ export const LogoIcon = ({className, style}) => {
   <path id="Path_117" data-name="Path 117" d="M137.122,19.78a6.471,6.471,0,0,1-2.571,2.876,7.421,7.421,0,0,1-3.827.97,7.869,7.869,0,0,1-4.131-1.084,7.385,7.385,0,0,1-2.819-3.086,10.141,10.141,0,0,1-1.008-4.627,10.118,10.118,0,0,1,1.008-4.646c.07-.138.176-.235.252-.366h0l.008-.009H111.644l-2.987,3.79h8.676c-.032.4-.052.814-.052,1.232a13.815,13.815,0,0,0,1.771,7.007,12.683,12.683,0,0,0,4.836,4.818,13.717,13.717,0,0,0,6.874,1.733,13.573,13.573,0,0,0,7.826-2.266,11.877,11.877,0,0,0,4.666-6.341Z" transform="translate(-108.657 -9.807)" fill="#dc051c"/>
 </svg>
 
-  )
-}
+  );
+};
 export const LogoText = ({ className, style}) => {
   return (
     <svg className={className}  style={style} id="Group_100" data-name="Group 100" xmlns="http://www.w3.org/2000/svg" width="84.071" height="12.652" viewBox="0 0 84.071 12.652">
@@ -279,8 +279,8 @@ export const LogoText = ({ className, style}) => {
     <path id="Path_10" data-name="Path 10" d="M75.3,53.554a2.713,2.713,0,0,1-1.077,1.205,3.112,3.112,0,0,1-1.6.406,3.3,3.3,0,0,1-1.731-.454,3.091,3.091,0,0,1-1.181-1.293,4.679,4.679,0,0,1,0-3.885c.03-.058.074-.1.106-.154h0l0,0H64.624l-1.252,1.587h3.635c-.014.17-.022.341-.022.516a5.789,5.789,0,0,0,.742,2.936,5.309,5.309,0,0,0,2.026,2.018,6.108,6.108,0,0,0,6.159-.223,4.979,4.979,0,0,0,1.954-2.657Z" transform="translate(-63.372 -44.555)" fill="#161615"/>
   </svg>
 
-  )
-}
+  );
+};
 export const ArrowDown = ({ className, style}) => {
   return (
     <svg className={className} style={style}  id="Iconly_Broken_Arrow_-_Down_2" data-name="Iconly/Broken/Arrow - Down 2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -288,8 +288,8 @@ export const ArrowDown = ({ className, style}) => {
 </svg>
 
 
-  )
-}
+  );
+};
 export const MenuIcon = ({className, style}) => {
   return (
     <svg className={className} style={style} id="Iconly_Light_Category" data-name="Iconly/Light/Category" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -301,21 +301,23 @@ export const MenuIcon = ({className, style}) => {
   </g>
 </svg>
 
-  )
-}
+  );
+};
 
 export const HamburgerIcon = ({className, style}) => {
   return (
-    <svg className={className} style={style} id="format-left" xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="0 0 18 14">
-  <path id="Path_579" data-name="Path 579" d="M4,5A1,1,0,0,0,4,7H20a1,1,0,0,0,0-2Z" transform="translate(-3 -5)"/>
-  <path id="Path_580" data-name="Path 580" d="M4,9a1,1,0,0,0,0,2h8a1,1,0,0,0,0-2Z" transform="translate(-3 -5)"/>
-  <path id="Path_581" data-name="Path 581" d="M3,14a1,1,0,0,1,1-1H20a1,1,0,0,1,0,2H4A1,1,0,0,1,3,14Z" transform="translate(-3 -5)"/>
-  <path id="Path_582" data-name="Path 582" d="M4,17a1,1,0,0,0,0,2h8a1,1,0,0,0,0-2Z" transform="translate(-3 -5)"/>
-</svg>
+    
+ <div className="menu-icon">
+		<input class="menu-icon__cheeckbox" type="checkbox" />
+		<div>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
 
 
-  )
-}
+  );
+};
 
 export const SettingThreeIcon = ({ className, style}) => {
   return (
@@ -325,8 +327,8 @@ export const SettingThreeIcon = ({ className, style}) => {
   </g>
 </svg>
 
-  )
-}
+  );
+};
 export const ArrowUp =({ className, style}) => {
   return (
     <svg className={className} style={style} id="Iconly_Broken_Arrow_-_Up_2" data-name="Iconly/Broken/Arrow - Up 2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -335,5 +337,63 @@ export const ArrowUp =({ className, style}) => {
   </g>
 </svg>
 
-  )
-}
+  );
+};
+
+
+export const HomeMono = ({ className, className2, className3, style }) => {
+  return (
+    <svg className={className} style={style} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em">
+      <path className={className2} style={style} fill="none"  d="M18 22H6a3.003 3.003 0 0 1-3-3v-8.75a3 3 0 0 1 1.023-2.257l6.001-5.25a3.012 3.012 0 0 1 3.952 0l6 5.25A3 3 0 0 1 21 10.25V19a3.003 3.003 0 0 1-3 3Z"></path>
+      <path className={className3} style={style} fill="none"  d="M16 22H8v-7a3 3 0 0 1 3-3h2a3 3 0 0 1 3 3Z"></path>
+    </svg>
+  );
+};
+
+export const UserMono = ({ className, className2, className3, style }) => {
+  return (
+    <svg className={className} style={style} xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="1em">
+      <path className={className2}  style={style} d="M12 14a6 6 0 1 1 6-6 6.007 6.007 0 0 1-6 6z"></path>
+      <path className={className3}  style={style} d="M15.7 12.713a5.975 5.975 0 0 1-7.405 0 9.992 9.992 0 0 0-6.23 8.179 1 1 0 0 0 .886 1.102L20.94 22a1 1 0 0 0 .995-1.108 9.995 9.995 0 0 0-6.233-8.179z"></path></svg>
+  );
+};
+
+export const MapMono = ({className, className2, className3, className4, style }) => {
+  return (
+    <svg className={className} style={style} xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="1em">
+      <path className={className2} style={style} d="M3.32,3.05005c-0.30498-0.10149-0.64021-0.04939-0.9,0.13989C2.15553,3.37466,1.99856,3.67741,2,4v14c0.00298,0.4286,0.27525,0.80898,0.68,0.95l6,2C8.78387,20.98125,8.89155,20.99807,9,21V4.93994L3.32,3.05005z"></path>
+      <path className={className3} style={style} d="M14.68,3.05005L9,4.93994V21c0.10845-0.00193,0.21613-0.01875,0.32-0.05L15,19.06006V3C14.89148,3.00118,14.7837,3.01804,14.68,3.05005z"></path>
+      <path className={className2} style={style} d="M21.32001,5.05005l-6-2C15.21594,3.01666,15.10797,3,15,3v16.06006l5.67999,1.88995C20.78387,20.98126,20.89154,20.99805,21,21c0.20911,0.00299,0.41321-0.06384,0.58002-0.18994C21.84448,20.62537,22.00146,20.32257,22,20V6C21.99701,5.57141,21.72473,5.19104,21.32001,5.05005z"></path></svg>
+  );
+};
+
+export const CalendarMono = ({ className, className2, className3, className4, style }) => {
+  return (
+    <svg className={className} style={style} xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="1em">
+      <path className={className2} style={style} d="M7 6a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v2a1 1 0 0 1-.999 1H7zm10 0a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v2a1 1 0 0 1-.999 1H17z"></path>
+      <path className={className3} style={style} d="M19 4h-1v1a1 1 0 0 1-2 0V4H8v1a1 1 0 0 1-2 0V4H5a3 3 0 0 0-3 3v2h20V7a3 3 0 0 0-3-3z"></path>
+      <circle cx="7" cy="13" r="1" className={className3} style={style}></circle>
+      <circle cx="7" cy="17" r="1" className={className3} style={style}></circle>
+      <circle cx="12" cy="13" r="1" className={className3} style={style}></circle>
+      <circle cx="12" cy="17" r="1" className={className3} style={style}></circle>
+      <circle cx="17" cy="13" r="1" className={className3} style={style}></circle>
+      <circle cx="17" cy="17" r="1" className={className3} style={style}></circle>
+      <path className={className2} style={style} d="M2 9v10a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V9H2zm5 9a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm0-4a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm5 4a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm0-4a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm5 4a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm0-4a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"></path></svg>
+  );
+};
+export const MapMarkMono = ({ className, className2, className3, className4, style}) => {
+  return (
+    <svg className={className} style={style} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em">
+      <path className={className2} style={style} d="M12 22a.993.993 0 0 1-.65-.241C11.049 21.502 4 15.397 4 10a8 8 0 0 1 16 0c0 5.397-7.049 11.502-7.35 11.759A.993.993 0 0 1 12 22Z"></path>
+      <path className={className3} style={style} d="M12 14a4 4 0 1 1 4-4 4.004 4.004 0 0 1-4 4Z"></path></svg>
+  );
+};
+
+export const LogoutMono = ({className, className2, className3, className4, style }) => {
+  return (
+    <svg className={className} style={style} xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24" width="1em">
+      <path className={className2} style={style}  d="m21.207 11.293-3-3a1 1 0 1 0-1.414 1.415L18.086 11H12.5a1 1 0 0 0 0 2h5.586l-1.293 1.293a1 1 0 1 0 1.414 1.414l3-3a1 1 0 0 0 0-1.415Z"></path>
+      <path className={className3} style={style}  d="M12.5 13a1 1 0 0 1 0-2h4V5a3.003 3.003 0 0 0-3-3h-8a3.003 3.003 0 0 0-3 3v14a3.003 3.003 0 0 0 3 3h8a3.003 3.003 0 0 0 3-3v-6Z"></path>
+      </svg>
+  );
+};

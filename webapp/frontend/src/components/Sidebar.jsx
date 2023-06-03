@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { NavLink,useNavigate, useLocation  } from 'react-router-dom';
 import { LogOut, reset } from "../features/authSlice";
 import { useDispatch, useSelector } from "react-redux";
-import { HomeIcon,TickSquareIcon,UserIcon ,CalendarIcon, DocumentIcon, UsersIcon,AddUserIcon, LocationIcon, ScanIcon, RaportIcon, ActivityIcon, LogoutIcon, LogoIcon, LogoText, ArrowDown } from '../common/icons/icons';
+import { HomeIcon,TickSquareIcon,UserIcon ,CalendarIcon, DocumentIcon, UsersIcon,AddUserIcon, LocationIcon, ScanIcon, RaportIcon, ActivityIcon, LogoutIcon, LogoIcon, LogoText, ArrowDown, HomeMono, UserMono, MapMono, CalendarMono, MapMarkMono, LogoutMono } from '../common/icons/icons';
 const Sidebar = (props) => {
     const location = useLocation();
     const dispatch = useDispatch();
@@ -16,8 +16,9 @@ const Sidebar = (props) => {
     };
 
     const sidebarStyles = {
-        width: props.isSidebarOpen ? '250px' : '50px',
-        transition: 'width 0.3s ease'
+        width: props.isSidebarOpen ? '100%' : '50px',
+        transition: 'width 0.3s ease',
+        maxWidth: '255px'
       };
       const sidebarClass = props.isSidebarOpen ? "" : "sidebar-small";
       
@@ -42,31 +43,59 @@ const Sidebar = (props) => {
             <div className="nav-logo">
                 <NavLink className="nav-logo-a" to="/dashboard"><LogoIcon className={"sidebar-logo-icon"} /><LogoText  className={"sidebar-logo-text"}/></NavLink>
             </div>
+            <div className="shadow-box"></div>
+            <div className="menu-title">
+                Dashboard
+            </div>
             <div className="nav-content">
             <ul className="nav-ul">
                 <li className={"sidebar-menu-li " + (location.pathname === '/dashboard' ? 'active-side' : null)}  >
                     <NavLink className="nav-a"  to="/dashboard">
-                        <HomeIcon  className="nav-icon"/>
+                    <HomeMono className="nav-icon" className2="uim-tertiary" className3="uim-primary" />
                         <span className="nav-text"  > Strona główna</span>
                     </NavLink>
                 </li>
-             <li  className={"sidebar-menu-li dropdown-btn " + (isActive ? "active" : "") + (location.pathname === '/users' ? 'active-side' : null)}    onClick={toggleDropdown}>
+                <li  className={"sidebar-menu-li dropdown-btn " + (isActive ? "active" : " ") + (location.pathname === '/users' ? 'active-side' : null)}    onClick={toggleDropdown}>
                     <NavLink className="nav-a">
-                        <UserIcon  className="nav-icon"/>
+                        <UserMono  className="nav-icon" className2="uim-tertiary" className3="uim-primary"/>
+                        
                     <span  className="nav-text " >Pracownicy <ArrowDown className="drop-arrow"/> </span>
                     </NavLink>
                     <ul class="sidebar-submenu-ul dropdown-container" style={{ display: isDropdownOpen ? "block" : "none" }}>
                         <li className='sidebar-submenu-li'><NavLink className="nav-a-dropdown" to="/users">Pracownicy</NavLink></li>
                         <li className='sidebar-submenu-li'><NavLink className="nav-a-dropdown" to="">Usuń pracownika</NavLink></li>
-                        <li className='sidebar-submenu-li'><NavLink className="nav-a-dropdown" to="">Dodaj użytkownika</NavLink></li>
+                        <li className='sidebar-submenu-li'><NavLink className="nav-a-dropdown" to="/adduser">Dodaj użytkownika</NavLink></li>
                     </ul>
+                </li>
+                <li className={"sidebar-menu-li " + (location.pathname === '/dashboards' ? 'active-side' : null)}  >
+                    <NavLink className="nav-a"  to="/dashboard">
+                    <MapMarkMono className="nav-icon" className2="uim-tertiary" className3="uim-primary" />
+                        <span className="nav-text"  > Trasy</span>
+                    </NavLink>
+                </li>
+                <li className={"sidebar-menu-li " + (location.pathname === '/dashboards' ? 'active-side' : null)}  >
+                    <NavLink className="nav-a"  to="/dashboard">
+                    <CalendarMono className="nav-icon" className2="uim-tertiary" className3="uim-primary" />
+                        <span className="nav-text"  > Kalendarz</span>
+                    </NavLink>
+                </li>
+                <li className={"sidebar-menu-li " + (location.pathname === '/dashboards' ? 'active-side' : null)}  >
+                    <NavLink className="nav-a"  to="/dashboard">
+                    <MapMono className="nav-icon" className2="uim-tertiary" className3="uim-primary" />
+                        <span className="nav-text"  > Mapa</span>
+                    </NavLink>
                 </li>
             </ul>
             {/* {user && user.role === "admin" && (
                 <Div jakis tam menu dostepne dla admina
             )} */}
-                <button  onClick={logout}  className="nav-button"><LogoutIcon className="nav-icon"  /><span className="nav-text" >Wyloguj się</span></button>
+
+                
             </div>
+            <div className="menu-title">
+                Ustawienia
+            </div>
+            <button  onClick={logout}  className="nav-button"><LogoutMono className="nav-icon" className2="uim-tertiary" className3="uim-primary" /><span className="nav-text" >Wyloguj się</span></button>
             <div className="nav-footer">
 
             </div>
